@@ -21,7 +21,7 @@ jobs:
         uses: gradle/gradle-build-action@bc72ac9e9d33a38827c042af2d90014ad4250535
       - name: Execute Gradle build
         run: ./gradlew build
-      - uses: Kir-Antipov/mc-publish@69d94c54c333ce6df545827ddfdd3ecb7f1ac8b8
+      - uses: Kir-Antipov/mc-publish@45765a374ec0602f500df35a9aecbbbf799fb26d
         with:
           modrinth-id: apotheoticcreation
           modrinth-token: ${{ secrets.MODRINTH_TOKEN }}
