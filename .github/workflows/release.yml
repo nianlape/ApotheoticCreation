@@ -28,3 +28,5 @@ jobs:
           curseforge-id: 956637
           curseforge-token: ${{ secrets.CURSEFORGE_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          game-versions: |
+            >=1.20
