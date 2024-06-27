@@ -65,7 +65,23 @@ public class ApotheoticCreation
 
         @Override
         public void writeNBT(CompoundTag nbt) {
-            nbt.putInt("rarity", this.rarity.ordinal());
+            switch (this.rarity.ordinal()) {
+                case 0:
+                    nbt.putString("rarity", "apotheosis:common");
+                    break;
+                case 1:
+                    nbt.putString("rarity", "apotheosis:uncommon");
+                    break;
+                case 2:
+                    nbt.putString("rarity", "apotheosis:rare");
+                    break;
+                case 3:
+                    nbt.putString("rarity", "apotheosis:epic");
+                    break;
+                case 4:
+                    nbt.putString("rarity", "apotheosis:mythic");
+                    break;
+            }
         }
 
         @Override
